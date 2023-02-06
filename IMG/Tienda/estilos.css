@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos de los fondo de pagina==================================================== */
+/* Fondo index */
+#fondo-inicio{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../IMG/Inicio/FondoInicio.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+/* Estilos del encabezado: Logo + menu================================================ */
+
+
+.Encabezado{
+    width: 80%;
+    margin: auto;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Maiden {
+    width: 200px;
+    cursor: pointer;
+}
+.Encabezado ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px;
+    position: relative;
+}
+
+.Encabezado ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+}
+
+.Encabezado ul li::before
+{
+    content: "";
+    height: 3px;
+    width: 0%;
+    background: rgb(251, 255, 8);
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+    transition: 0.4s ease-out;
+}
+.Encabezado ul li:hover::before {
+    width: 100%;
+}
+
+/* Estilos main==================================================================================== */
+
+/* Estilos main inicio---------------------------------------------- */
+section{
+    text-align: center;
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+section .box{
+    background-color: rgba(2, 0, 0, 0.466);
+    color: aliceblue;
+    width: 300px;
+    height: 350px;
+    margin: 30px;
+    padding: 15px;
+    display: inline-block;
+    align-items: center;
+}
+
+section div h2{
+    margin: 3px;
+}
+section div h3{
+    margin: 5px;
+}
+
+section .boton{
+    background-color:  rgba(251, 255, 8, 0.486);
+    width: 60%;
+    margin-top: 0.5rem;
+    padding: 0.7rem 1.2rem 0.7rem 1.2rem;
+
+}
+
+
+
+
+
+footer{
+    background-color: #000;
+
+}
+
+
+.contenedor-pie{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    border: 1px solid wheat;
+}
+
+.icon {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin: 20px;
+    border-radius: 50%;
+    transition: all .8s;
+    cursor: pointer;
+}
+
+.icon:hover {
+    background-color: #edf038a4;
+    box-shadow:  0 0 20px #e60073 ;
+}
+
+.icon:hover:nth-child(2) {
+    background-color: #edf038a4;
+    box-shadow:  0 0 20px #1877f2;
+}
+
+.icon:hover:nth-child(3) {
+    background-color: #edf038a4;
+    box-shadow: 0 0 20px #25d366 ;
+}
+
+.icon:hover:nth-child(4) {
+    background-color: #edf038a4;
+    box-shadow:  0 0 20px #f21d1d ;
+}
+
+.icon i {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 1.7rem;
+}
+
+svg circle {
+    stroke-dasharray: 150;
+    transition: all .8s ease-in-out;
+}
+
+.icon:hover circle {
+    stroke-dasharray: 220;
+}
+
+
+
+
+
+

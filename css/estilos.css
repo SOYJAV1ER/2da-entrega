@@ -1,0 +1,578 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+#FondoInicio {
+    background-image: url(/IMG/Inicio/FondoInicio.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+
+}
+
+
+#fondo-tienda {
+    background-image: url(/IMG/Tienda/FondoTienda.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+/* estilos del encabezado================================================= */
+header {
+    width: 80%;
+    margin: auto;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 300px;
+    cursor: pointer;
+}
+
+header nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+
+}
+
+header nav ul li::before {
+    content: "";
+    height: 3px;
+    width: 0%;
+    background-color: rgb(251, 255, 8);
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.4s ease-out;
+}
+
+header nav ul li:hover::before {
+    width: 100%;
+}
+/* encabezado tienda----------------------------- */
+.header-tienda{
+    margin-top: 18px;
+}
+
+
+
+
+
+
+
+/* estilos main de las paginas=================================================*/
+
+
+
+
+/* estilo main inicio---------------------------------------------------- */
+main {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 3rem;
+    color: #CDC36F;
+}
+
+.escribir {
+    font-size: 30px;
+    display: block;
+    font-family: fantasy;
+    white-space: nowrap;
+    width: 39ch;
+    animation: escribiendo 6s steps(30) infinite;
+    overflow: hidden;
+    box-shadow: 1px 1px 10px cornsilk;
+}
+
+.cursor {
+    animation: 1s parpadeo infinite;
+}
+
+@keyframes escribiendo {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes parpadeo {
+    50% {
+        opacity: 0;
+    }
+}
+
+section {
+    display: flex;
+    margin-top: 250px;
+    justify-content: center;
+    text-align: center;
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+
+.container {
+    width: 100%;
+    display: flex;
+    
+}
+
+.card {
+    width: 100%;
+    margin: 50px;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.534);
+    box-shadow: 0px 1px 10px rgb(112, 114, 8);
+    cursor: default;
+    transition: all 400ms ease;
+}
+
+.card:hover {
+    box-shadow: 5px 5px 20px rgb(175, 5, 5);
+    transform: translateY(-3%);
+}
+
+.card img {
+    width: 70%;
+    height: 220px;
+    padding: 5px;
+    margin-top: 20px;
+    background-color: rgba(245, 245, 245, 0.322);
+}
+
+.card .contenido {
+    padding: 15px;
+    text-align: center;
+}
+
+.card .contenido h3 {
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.card .contenido a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    color: whitesmoke;
+    border: 1px solid #c9cc2f;
+    border-radius: 4px;
+    transition: all 400ms ease;
+}
+
+.card .contenido a:hover {
+    background: #aca10a75;
+    color: rgb(12, 12, 12);
+}
+
+
+
+/* estilo main tienda--------------------------------------------------- */
+
+.tienda {
+    position: relative;
+    height: 100%;
+    margin-top: 10px;
+    
+
+
+}
+
+.tienda-box {
+    background: rgba(185, 151, 151, 0.178);
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: rgb(223, 179, 179);
+    margin: 0;
+    padding: 0;
+
+}
+
+swiper-container {
+    width: 500px;
+    height: 500px;
+    padding: 100px;
+
+
+}
+
+swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    background-color: #c9cc2fd7;
+
+}
+
+swiper-slide img {
+    display: block;
+    width: 100%;
+    
+}
+
+swiper-slide h2 {
+    font-weight: 400;
+    margin: 2px 0px 3px 0px;
+    background-color: #000;
+    padding: 3px;
+}
+
+swiper-slide h3 {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px;
+    margin-top: 3px;
+    color: whitesmoke;
+    border: 1px solid #c9cc2f;
+    border-radius: 4px;
+    transition: all 400ms ease;
+    cursor: default;
+    
+
+}
+
+swiper-slide h3:hover {
+    background: #c9cc2fd7;
+    color: rgb(12, 12, 12);
+}
+
+
+
+
+
+
+
+/* estilos del footer=================================================================================== */
+
+footer {
+    background: rgb(2,0,36);
+    background: linear-gradient(0deg, rgba(2,0,36,0.9598214285714286) 10%, rgba(36,36,52,0.7749474789915967) 46%, rgba(36, 36, 52, 0.726) 100%);
+    margin-top: 2%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.pie-logo img{
+    margin: 20px 0 3px 0 ;
+}
+.pie-derechos{
+    text-align: center;
+    padding: 5px;
+    color: rgb(216, 212, 212);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.5rem;
+    margin-bottom: 8px;
+}
+
+.contenedor-iconos {
+    display: flex;
+    margin: 5px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.contenedor-iconos ul {
+    display: flex;
+}
+
+.contenedor-iconos ul li {
+    position: relative;
+    display: block;
+    color: #666;
+    font-size: 15px;
+    height: 30px;
+    width: 30px;
+    background: #000000;
+    line-height: 30px;
+    border-radius: 50%;
+    margin: 0 15px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+ul li:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: inherit;
+    width: inherit;
+    /* background: #d35400; */
+    border-radius: 50%;
+    transform: scale(.9);
+    z-index: -1;
+    transition: .5s;
+}
+
+ul li:nth-child(1):before {
+    background: rgb(251, 255, 8);
+}
+
+ul li:nth-child(2):before {
+    background: rgb(251, 255, 8);
+}
+
+ul li:nth-child(3):before {
+    background: rgb(251, 255, 8);
+}
+
+ul li:nth-child(4):before {
+    background: rgb(251, 255, 8);
+}
+
+ul li:nth-child(5):before {
+    background: rgb(251, 255, 8);
+}
+
+ul li:hover:before {
+    filter: blur(3px);
+    transform: scale(1.2);
+    /* box-shadow: 0 0 15px #d35400; */
+}
+
+ul li:nth-child(1):hover:before {
+    box-shadow: 0 0 15px rgb(251, 255, 8);
+}
+
+ul li:nth-child(2):hover:before {
+    box-shadow: 0 0 15px rgb(251, 255, 8);
+}
+
+ul li:nth-child(3):hover:before {
+    box-shadow: 0 0 15px rgb(251, 255, 8);
+}
+
+ul li:nth-child(4):hover:before {
+    box-shadow: 0 0 15px rgb(251, 255, 8);
+}
+
+ul li:nth-child(5):hover:before {
+    box-shadow: 0 0 15px rgb(251, 255, 8);
+}
+
+ul li:nth-child(1):hover {
+    color: rgb(251, 255, 8);
+    box-shadow: 0 0 15px rgb(251, 255, 8);
+    text-shadow: 0 0 15px rgb(251, 255, 8);
+}
+
+ul li:nth-child(2):hover {
+    color: rgb(251, 255, 8);
+    box-shadow: 0 0 15px rgb(251, 255, 8);
+    text-shadow: 0 0 15px rgb(251, 255, 8);
+}
+
+ul li:nth-child(3):hover {
+    color: rgb(251, 255, 8);
+    box-shadow: 0 0 15px rgb(251, 255, 8);
+    text-shadow: 0 0 15px rgb(251, 255, 8);
+}
+
+ul li:nth-child(4):hover {
+    color: rgb(251, 255, 8);
+    box-shadow: 0 0 15px rgb(251, 255, 8);
+    text-shadow: 0 0 15px rgb(251, 255, 8);
+}
+
+ul li:nth-child(5):hover {
+    color: rgb(251, 255, 8);
+    box-shadow: 0 0 15px rgb(251, 255, 8);
+    text-shadow: 0 0 15px rgb(251, 255, 8);
+}
+
+/* footer tienda----------------------------------- */
+.pie-tienda{
+    position: absolute;
+    width: 100%;
+}
+
+
+
+/* =========================================================================================== */
+/* Estilos Mobile============================================================================= */
+/* Falta mejorar!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+@media screen and (max-width: 480px) { 
+    
+    #FondoInicio {
+        background-position: center;
+    }
+    /* encabezado inicio mobile---------------------- */
+    header {
+        display: block;
+
+    }
+
+    header img {
+        margin-top: 0;
+        margin-left: 35px;
+    }
+
+    header nav ul li a {
+        font-size: 0.8rem;
+    }
+
+    header nav ul li {
+        text-align: center;
+        margin: 0 6px;
+    }
+
+/* main inicio mobile---------------------------------- */
+    .escribir{
+        font-size: 20px;
+        margin-top: 0.5rem;
+    }
+
+
+    section .container #card1{
+        display: none;
+    }
+    section .container #card3{
+        display: none;
+    }
+
+    section {
+        margin: 0 auto;
+        display: block;
+    }
+    
+    
+    
+    .container {
+        width: 80%;
+        display: flex;
+        margin-left: 3rem;
+        
+        
+    }
+    
+    
+    .card img {
+        width: 75%;
+        height: 150px;
+        padding: 1px;
+        margin-top: 15px;
+        background-color: rgba(245, 245, 245, 0.322);
+    }
+    
+    .card .contenido {
+        padding: 5px;
+        text-align: center;
+    }
+    
+    .card .contenido h3 {
+        font-weight: 400;
+        margin-bottom: 5px;
+        font-size: 1rem;
+    }
+    
+    .card .contenido a {
+        text-decoration: none;
+        display: inline-block;
+        font-size: 0.7rem;
+        padding: 3px;
+        margin-top: 1px;
+    }
+
+
+
+    /* Footer inicio mobile------------------------------- */
+    .pie-derechos{
+        font-size: 0.4rem;
+    }
+    footer .pie-logo img{
+        width: 30%;
+    }
+
+
+    /* tienda mobile===========================================================*/
+    #tienda-fondo img{
+        background-position: center;
+    }
+    /* encabezado tienda----------------------------------- */
+    
+    /* main tienda mobile---------------------------------- */
+    .tienda {
+        position: relative;
+        height: 50%;
+        margin-top: 10px;
+    
+    
+    }
+    
+    .tienda-box {
+        font-size: 10px;
+        
+    
+    }
+    
+    swiper-container {
+        width: 300px;
+        height: 300px;
+        padding: 35px;
+    
+    
+    }
+    
+    swiper-slide {
+        background-position: center;
+        background-size: cover;
+        text-align: center;
+        width: 250px;
+        height: 180px;
+        background-color: #c9cc2f6e;
+    
+    }
+    
+    swiper-slide img {
+        display: block;
+        width: 75%;
+        margin-left: 1.7rem;
+        
+    }
+    
+    swiper-slide h2 {
+        font-weight: 400;
+        margin: 2px 0px 3px 0px;
+        background-color: #000;
+        padding: 4px;
+    }
+    
+    swiper-slide h3 {
+        background-color: #000;
+        padding: 5px;
+        margin-top: 3px;
+        
+        
+    }
+    .tienda{
+        margin-bottom: 70px;
+    }
+
+}
